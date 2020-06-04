@@ -1,6 +1,4 @@
-import numpy as np
 import cv2
-import requests
 
 url = r"http://192.168.0.123:8080/shot.jpg"
 counter=0
@@ -17,7 +15,7 @@ while True:
         cv2.imshow('image_window',img)
 
     cv2.imshow('image_window',flipped)
-    
+   
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break   
 cv2.destroyAllWindows()
