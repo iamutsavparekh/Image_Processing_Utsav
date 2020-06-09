@@ -1,4 +1,6 @@
 import cv2
+import requests
+import numpy as np
 
 url = r"http://192.168.0.123:8080/shot.jpg"
 counter=0

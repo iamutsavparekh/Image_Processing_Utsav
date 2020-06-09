@@ -1,4 +1,6 @@
 import cv2
+import requests
+import numpy as np
 
 url = r"http://192.168.0.123:8080/shot.jpg"
 counter=0
@@ -9,7 +11,7 @@ while True:
     online_img = cv2.imdecode(online_vid_arr, -1)
     img = online_img
     rotated=cv2.rotate(img,cv2.ROTATE_90_CLOCKWISE)
-    flipped= cv2.flip(rotated,-1) 
+    flipped= cv2.flip(rotated,-1) # 1
     if counter%2==0:
         cv2.imshow('Img',rotated)
     else:

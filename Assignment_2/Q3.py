@@ -14,7 +14,7 @@ while True:
     endtime=time.time()
     diff=int(endtime-start)
     print(diff)
-    if diff % 5 != 0:
+    if diff % 5 == 0:
         cv2.imshow('image_window',flipped)
     else:
         cv2.imshow('image_window',img)
